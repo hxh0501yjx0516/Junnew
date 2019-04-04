@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+    <action-mappings>
+    <!-- 客户管理 -->
+	  	 <action path="/webmaster" type="com.pancou.ad.action.WebMasterAction" parameter="action">
+	  		<forward name="myhome" path="/html/webmaster/myhome.jsp"></forward>
+	  		<forward name="mypage" path="/html/webmaster/webmaster.jsp"></forward>
+	  		<forward name="url" path="/html/webmaster/url.jsp"></forward>
+	  		<forward name="pay" path="/html/webmaster/adapply.jsp"></forward>
+	  		<forward name="details" path="/html/webmaster/paydetails.jsp"></forward>
+	  		<forward name="addurl" path="/html/webmaster/addurl.jsp"></forward>
+	  	</action>
+	  	
+	  	<action path="/code" type="com.pancou.ad.action.CodeAction" parameter="action">
+            <forward name="step1" path="/html/webmaster/step1.jsp"></forward>
+            <forward name="step2" path="/html/webmaster/step2.jsp"></forward>
+        </action>
+	</action-mappings>
+</struts-config>
+

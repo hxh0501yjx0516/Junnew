@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+    <action-mappings>
+    <!-- 客户管理 -->
+	  	 <action path="/customer" type="com.pancou.ad.action.CustomerAction" parameter="action">
+	  		<forward name="myhome" path="/html/customer/myhome.jsp"></forward>
+	  		<forward name="adplan" path="/html/customer/adplan.jsp"></forward>
+	  		<forward name="adplancycle" path="/html/customer/adcycle.jsp"></forward>
+	  		<forward name="report" path="/html/customer/adreport.jsp"></forward>
+	  		<forward name="mypage" path="/html/customer/customer.jsp"></forward> 
+	  	</action>
+	</action-mappings>
+</struts-config>
+

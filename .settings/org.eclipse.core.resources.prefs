@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/com=gbk
+encoding//src/com/pancou/ad/action=UTF-8
+encoding//src/com/pancou/ad/action/CustomerAction.java=UTF-8
+encoding//src/com/pancou/ad/dao/PlatDao.java=gbk
+encoding//src/com/pancou/ad/util/BaseDispatchAction.java=GBK
+encoding//src/com/pancou/ad/util/ipseeker/IPSeeker.java=UTF-8
+encoding//src/com/pancou/ad/util/ipseeker/Message.java=UTF-8
+encoding//src/com/pancou/ad/vo/AdBox.java=UTF-8
+encoding//src/com/pancou/ad/vo/WebMaster.java=gbk
+encoding/<project>=UTF-8

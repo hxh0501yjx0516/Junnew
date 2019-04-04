@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources /> 
+  <form-beans />
+  <global-exceptions />
+   <global-forwards>
+        <forward name="upload" path="/util/uploadajaxDone.jsp"></forward>
+     	<forward name="logout" path="/index.jsp"></forward>
+   		<forward name="ajaxDone" path="/util/ajaxDone.jsp"></forward>
+   		<forward name="relogin" path="/html/relogin.jsp"></forward> 
+    </global-forwards>
+    <action-mappings>
+    	<action path="/toindex" type="com.pancou.ad.action.ToIndexAction" parameter="action">
+	  		<forward name="list" path="/html/index.jsp"></forward>
+	  	</action>
+    <!-- 登录验证 -->
+	  	<action path="/login" type="com.pancou.ad.action.LoginAction" parameter="action">
+	  		<forward name="customer" path="/html/customer/index.jsp"></forward>
+	  		<forward name="webmaster" path="/html/webmaster/index.jsp"></forward>
+	  	</action>
+	  	 <!-- 登出 -->
+	  	<action path="/logout" type="com.pancou.ad.action.LogoutAction" parameter="action">
+	  		<forward name="out" path="/index.jsp" redirect="true"></forward>
+	  	</action>
+	  	<!-- 注册模块 -->
+	  	<action path="/register" type="com.pancou.ad.action.RegisterAction" parameter="action">
+	  	<forward name="register" path="/html/reg.jsp" ></forward>
+	  	</action>
+	  	<!-- 跳转 -->
+	  	<action path="/transfer" type="com.pancou.ad.action.TransferAction" parameter="action">
+	  		<forward name="ggz" path="/html/ggz.jsp"></forward>
+	  		<forward name="wzz" path="/html/wzz.jsp"></forward>
+	  		<forward name="bzzx" path="/html/bzzx.jsp"></forward>
+	  		<forward name="cus" path="/html/cus.jsp"></forward>
+	  		<forward name="ggms" path="/html/ggms.jsp"></forward>
+	  	</action>
+	  	</action-mappings>
+  <message-resources parameter="com.yourcompany.struts.ApplicationResources" />
+</struts-config>
+

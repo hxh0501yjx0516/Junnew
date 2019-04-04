@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+    <action-mappings>
+    <!-- 客户管理 -->
+	  	 <action path="/adplan" type="com.pancou.ad.action.AdPlanAction" parameter="action">
+	  		<forward name="list" path="/html/webmaster/adplan.jsp"></forward> 
+	  		<forward name="readyplan" path="/html/webmaster/myplan.jsp"></forward> 
+	  		<forward name="readybox" path="/html/webmaster/myreadybox.jsp"></forward> 
+	  		
+	  	</action>
+	</action-mappings>
+</struts-config>
+
